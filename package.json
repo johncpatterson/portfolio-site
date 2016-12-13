@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Portfolio for John C Patterson",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johncpatterson/portfolio-site.git"
+  },
+  "keywords": [
+    "john",
+    "patterson",
+    "portfolio",
+    "html",
+    "css",
+    "javascript",
+    "developer"
+  ],
+  "author": "John C Patterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johncpatterson/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/johncpatterson/portfolio-site#readme"
+}

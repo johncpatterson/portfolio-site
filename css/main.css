@@ -1,0 +1,18 @@
+body {
+  background-color: lightcoral; }
+
+input {
+  margin-top: 30px; }
+
+.search-team {
+  margin-top: 60px 0;
+  text-align: center; }
+
+.team-info {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0; }
+
+footer {
+  text-align: center;
+  margin: 40px 0; }
