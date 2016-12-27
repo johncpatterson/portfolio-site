@@ -1,18 +1,86 @@
-body {
-  background-color: lightcoral; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-input {
-  margin-top: 30px; }
+html {
+  width: 100%;
+  font-family: Helvetica; }
 
-.search-team {
-  margin-top: 60px 0;
-  text-align: center; }
+.inline {
+  display: inline; }
 
-.team-info {
+.inline-block {
+  display: inline-block; }
+
+.header-container {
+  position: fixed;
+  background-color: white;
+  height: 75px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 28px 30px 28px 30px;
+  vertical-align: middle; }
+  .header-container .logo {
+    font-size: 53px; }
+  .header-container .nav-links {
+    float: right;
+    vertical-align: middle;
+    font-weight: 600; }
+    .header-container .nav-links ul li {
+      display: inline-block;
+      padding: 0 4px 2px 4px; }
+      .header-container .nav-links ul li a {
+        text-decoration: none;
+        position: relative;
+        color: #000; }
+        .header-container .nav-links ul li a:hover {
+          text-decoration: none; }
+        .header-container .nav-links ul li a:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          background-color: orange;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+        .header-container .nav-links ul li a:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+
+.intro {
+  margin-top: 130px;
+  width: 70%;
+  font-size: 5.1em;
+  line-height: 1.3;
+  font-weight: 600; }
+
+.headshot {
+  width: 29%; }
+  .headshot img {
+    height: 55%;
+    width: 100%;
+    display: block; }
+
+.background {
+  width: 50%;
+  height: 500px;
+  vertical-align: top;
+  line-height: 1.8; }
+  .background h3 {
+    text-align: center; }
+
+.skills {
+  width: 49.6%;
+  height: 500px;
+  background-color: black;
   text-align: center;
-  font-size: 40px;
-  margin: 30px 0; }
-
-footer {
-  text-align: center;
-  margin: 40px 0; }
+  color: white;
+  vertical-align: center; }
