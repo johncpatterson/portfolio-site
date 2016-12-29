@@ -28,15 +28,20 @@ body {
   width: 100%;
   z-index: 100;
   padding: 28px 30px 28px 30px;
-  vertical-align: middle; }
-  .header-container .logo {
+  vertical-align: middle;
+  box-shadow: 0 9px 5px -7px #777; }
+  .header-container .logo-header {
     font-size: 53px;
-    font-family: 'Aclonica', sans-serif; }
+    font-family: 'Aclonica', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px; }
   .header-container .nav-links {
     float: right;
     vertical-align: middle;
     font-weight: 600;
-    padding-top: 14px; }
+    padding-top: 14px;
+    font-size: 1.1em; }
     .header-container .nav-links ul li {
       display: inline-block;
       padding: 0 4px 2px 4px; }
@@ -65,7 +70,7 @@ body {
           transform: scaleX(1); }
 
 .intro-container {
-  margin-top: 113px; }
+  margin-top: 125px; }
 
 .intro {
   font-family: 'Volkhov', serif;
@@ -93,34 +98,70 @@ body {
   height: 530px;
   background-color: black;
   text-align: center;
-  color: white;
-  vertical-align: center; }
+  color: white; }
   .skills h2 {
     text-align: center;
     font-weight: 600; }
   .skills i {
-    font-size: 25px; }
+    font-size: 25px;
+    color: orange; }
   .skills ol {
     margin-top: 30px; }
     .skills ol li {
       padding-top: 5px;
       padding-bottom: 5px; }
 
+.project-1 {
+  background-image: url("img/github-profile-screenshot.png"); }
+
 .contact {
   height: auto;
   background-color: black;
   color: white;
-  text-align: center; }
-  .contact ol li {
+  text-align: center;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important; }
+  .contact h2 {
+    text-align: center;
+    font-weight: 600; }
+  .contact ol {
+    padding: 10px 30px 10px 30px;
     display: inline-block; }
-    .contact ol li i {
-      font-size: 55px;
-      color: orange; }
+    .contact ol li {
+      display: inline-block;
+      padding: 10px 30px 10px 30px; }
+      .contact ol li i {
+        font-size: 95px;
+        color: orange;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: linear; }
+        .contact ol li i:hover {
+          color: white; }
+  .contact p {
+    text-align: center; }
 
 footer {
-  text-align: center;
-  height: auto;
-  background-color: white; }
+  height: 100px;
+  background-color: white;
+  position: relative; }
+  footer p.copyright {
+    font-family: 'Volkhov', serif;
+    font-size: 20px;
+    position: absolute;
+    left: 46px;
+    bottom: 38px; }
+    footer p.copyright i {
+      color: red; }
+  footer .logo-footer {
+    font-size: 30px;
+    font-family: 'Aclonica', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    bottom: 24px; }
 
 @media (max-width: 1000px) {
   .intro {
@@ -141,7 +182,7 @@ footer {
   .header-container {
     padding: 15px 6px 15px 12px; }
   .intro-container {
-    margin-top: 104px; }
+    margin-top: 110px; }
   .headshot {
     padding: 0 !important; }
     .headshot img.john-headshot-1 {
@@ -153,7 +194,7 @@ footer {
   .logo {
     font-size: 20px; }
   .intro-container {
-    margin-top: 70px; }
+    margin-top: 90px; }
   p.intro-text {
     font-size: 0.8em;
     line-height: 1.2;

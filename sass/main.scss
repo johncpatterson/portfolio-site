@@ -49,15 +49,22 @@
             z-index: 100;
             padding: 28px 30px 28px 30px;
             vertical-align: middle;
-            .logo {
+            // box-shadow: 0px 3px 5px gray;
+            box-shadow: 0 9px 5px -7px #777;
+            .logo-header {
               font-size: 53px;
               font-family: 'Aclonica', sans-serif;
+              background-color: black;
+              color: white;
+              padding: 10px;
+              // box-shadow: 0 10px 6px -6px #777;
             }
             .nav-links {
               float: right;
               vertical-align: middle;
               font-weight: 600;
               padding-top: 14px;
+              font-size: 1.1em;
               ul {
                 li {
                   display: inline-block;
@@ -95,7 +102,7 @@
           }
           
           .intro-container {
-            margin-top: 113px;
+            margin-top: 125px;
           }
           
           .intro {
@@ -136,13 +143,14 @@
             background-color: black;
             text-align: center;
             color: white;
-            vertical-align: center;
+            
             h2 {
               text-align: center;
               font-weight: 600;
             }
             i {
               font-size: 25px;
+              color: orange;
             }
             ol {
               margin-top: 30px;
@@ -152,27 +160,73 @@
               }
             }
           }
+
+          .project-1 {
+          	background-image: url('img/github-profile-screenshot.png');
+          	
+          }
+          
+
+
           
           .contact {
             height: auto;
             background-color: black;
             color: white;
             text-align: center;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            h2 {
+              text-align: center;
+              font-weight: 600;
+            }
             ol {
+              padding: 10px 30px 10px 30px;
+              display: inline-block;
               li {
                 display: inline-block;
+                padding: 10px 30px 10px 30px;
                 i {
-                  font-size: 55px;
+                  font-size: 95px;
                   color: orange;
+                  transition-property: color;
+                  transition-duration: 0.3s;
+                  transition-timing-function: linear;
+                  &:hover {
+                    color: white;
+                  }
                 }
               }
+            }
+            p {
+              text-align: center;
             }
           }
           
           footer {
-            text-align: center;
-            height: auto;
+            height: 100px;
             background-color: white;
+            position: relative;
+            p.copyright {
+              font-family: 'Volkhov', serif;
+              font-size: 20px;
+              position: absolute;
+              left: 46px;
+              bottom: 38px;
+              i {
+                color: red;
+              }
+            }
+            .logo-footer {
+              font-size: 30px;
+              font-family: 'Aclonica', sans-serif;
+              background-color: black;
+              color: white;
+              padding: 10px;
+              position: absolute;
+              right: 50px;
+              bottom: 24px;
+            }
           }
           
           //Mediq Queries
@@ -201,7 +255,7 @@
                 padding: 15px 6px 15px 12px;
               }
               .intro-container {
-                margin-top: 104px;
+                margin-top: 110px;
               }
               .headshot {
                 padding: 0 !important;
@@ -218,7 +272,7 @@
                 font-size: 20px;
               }
               .intro-container {
-                margin-top: 70px;
+                margin-top: 90px;
               }
               p.intro-text {
                 font-size: 0.8em;
