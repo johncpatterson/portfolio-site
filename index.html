@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>JohnCPatterson.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John C Patterson</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Gentium+Basic|Wendy+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aclonica|Volkhov" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://use.fontawesome.com/0e26b451b3.js"></script>
   <!-- Materilize -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- Google Analytics -->
@@ -33,53 +33,122 @@
   </script>
 </head>
 
-<body>
+<body ontouchstart=””>
   <header>
     <div class="header-container">
-      <div class="logo inline"><i class="fa fa-hand-o-down" aria-hidden="true"></i>
+      <div class="logo inline">JCP
+        <!-- <i class="fa fa-hand-o-down" aria-hidden="true"></i> -->
       </div>
       <div class="nav-links inline">
         <ul class="inline">
-          <li><a href="">Who I Am</a></li>
-          <li><a href="">What I do</a></li>
-          <li><a href="">Where to Find Me</a></li>
+          <li><a href="#whoami">Who I Am</a></li>
+          <li><a href="#whatido">What I do</a></li>
+          <li><a href="#wheretofindme">Where to Find Me</a></li>
         </ul>
       </div>
     </div>
   </header>
-  <section class="intro inline-block">
-    <h1>
-    Hi I'm John and I like to 
-  </h1>
-    <h1>
-     build things on the web.
-  </h1>
-    <h1>
-    Check out my stuff...
-  </h1>
-  </section>
-  <section class="headshot inline-block">
-    <img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1">
-  </section>
-  <section class="background inline-block">
-    <h3>About Me</h3>
-    <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
-    <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
-    <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi.</p>
-  </section>
-  <section class="skills inline-block">
-    <h3>Skills</h3>
-    <ol>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>Javascript</li>
-      <li>jQuery</li>
-      <li>Sass</li>
-      <li>Git</li>
-    </ol>
-  </section>
-  <footer>
-  </footer>
+  <div class="row">
+    <section class="intro-container">
+      <section class="headshot inline-block col s12 m4">
+        <img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1">
+      </section>
+      <section class="intro inline-block col s12 m8">
+        <p class="intro-text">
+          Hi I'm John and I like to build things on the web. Check out my stuff...
+        </p>
+      </section>
+    </section>
+  </div>
+  <div class="row no-margin">
+    <section class="background inline-block col s12 m6">
+      <h2>Who Am I?</h2>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+    <section class="skills inline-block col s12 m6">
+      <h2><i class="fa fa-code" aria-hidden="true"></i>
+  What I do <i class="fa fa-code" aria-hidden="true"></i>
+  </h2>
+      <ol>
+        <li>HTML5 <i class="fa fa-html5" aria-hidden="true"></i>
+        </li>
+        <li>Javascript</li>
+        <li><i class="fa fa-css3" aria-hidden="true"></i> CSS3
+        </li>
+        <li>jQuery</li>
+        <li>Git & GitHub <i class="fa fa-github" aria-hidden="true"></i>
+        </li>
+        <li>Sass</li>
+      </ol>
+    </section>
+  </div>
+  <div class="row no-margin">
+    <section class="skills inline-block col s12 m6">
+      <h2><i class="fa fa-code" aria-hidden="true"></i>
+ Skills <i class="fa fa-code" aria-hidden="true"></i>
+ </h2>
+      <ol>
+        <li>HTML5 <i class="fa fa-html5" aria-hidden="true"></i>
+        </li>
+        <li>Javascript</li>
+        <li><i class="fa fa-css3" aria-hidden="true"></i> CSS3
+        </li>
+        <li>jQuery</li>
+        <li>Git & GitHub <i class="fa fa-github" aria-hidden="true"></i>
+        </li>
+        <li>Sass</li>
+      </ol>
+    </section>
+    <section class="background inline-block project hide-on-mobile col s12 m6">
+      <h2>Project 1</h2>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+  </div>
+  <div class="row no-margin">
+    <section class="background inline-block project hide-on-mobile col s12 m6">
+      <h2>Project 2</h2>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
+      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+    <section class="skills inline-block col s12 m6">
+      <h2><i class="fa fa-code" aria-hidden="true"></i>
+  Skills <i class="fa fa-code" aria-hidden="true"></i>
+  </h2>
+      <ol>
+        <li>HTML5 <i class="fa fa-html5" aria-hidden="true"></i>
+        </li>
+        <li>Javascript</li>
+        <li><i class="fa fa-css3" aria-hidden="true"></i> CSS3
+        </li>
+        <li>jQuery</li>
+        <li>Git & GitHub <i class="fa fa-github" aria-hidden="true"></i>
+        </li>
+        <li>Sass</li>
+      </ol>
+    </section>
+  </div>
+  <div class="row no-margin">
+    <section class="contact inline-block col s12">
+      <p>Where to find me...</p>
+      <ol>
+        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </li>
+        <li><i class="fa fa-github-square" aria-hidden="true"></i>
+        </li>
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </li>
+        <li><i class="fa fa-medium" aria-hidden="true"></i>
+        </li>
+      </ol>
+    </section>
+  </div>
+  <div class="row no-margin">
+    <footer class="col s12">
+      The footer.... Copywright 2016 John C. Patterson
+    </footer>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
   <script src="js/main.js"></script>
