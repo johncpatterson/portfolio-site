@@ -5,6 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>John C Patterson</title>
+  <!-- favicons-->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Aclonica|Volkhov" rel="stylesheet">
   <!-- Font Awesome -->
@@ -12,7 +30,9 @@
   <script src="https://use.fontawesome.com/0e26b451b3.js"></script>
   <!-- Materilize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- CSS Reset -->
   <link rel="stylesheet" href="css/reset.css">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Google Analytics -->
   <script>
@@ -47,10 +67,10 @@
       </div>
     </div>
   </header>
-  <div class="row">
+  <section class="row no-margin">
     <section class="intro-container">
       <section class="headshot inline-block col s12 m4">
-        <img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1">
+        <img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1 responsive-img">
       </section>
       <section class="intro inline-block col s12 m8">
         <p class="intro-text">
@@ -58,12 +78,11 @@
         </p>
       </section>
     </section>
-  </div>
-  <div class="row no-margin" id="whoami">
+  </section>
+  <section class="row no-margin" id="whoami">
     <section class="background inline-block col s12 m6">
-      <h2>Who Am I?</h2>
+      <h2>Who Am I ?</h2>
       <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
-      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </section>
     <section class="skills inline-block col s12 m6">
       <h2><i class="fa fa-code" aria-hidden="true"></i>
@@ -81,24 +100,35 @@
         <li>Sass</li>
       </ol>
     </section>
-  </div>
-  <div class="row no-margin">
+  </section>
+  <section class="row no-margin">
     <section class="skills project-1 inline-block col s12 m6" id="whatido">
+      <img src="img/github-profile-screenshot.png" alt="John Patterson headshot" class="fade responsive-img">
     </section>
     <section class="background inline-block project hide-on-mobile col s12 m6">
       <h2>GitHub Profile Recreation</h2>
       <p>The Iron Yard week 4, day 4 assignment. The goal of this assignment was to re-create our user profile page on GitHub using HTML and CSS. The content of the page was to be pulled in via the GitHub API.</p>
     </section>
-  </div>
-  <div class="row no-margin">
+  </section>
+  <section class="row no-margin">
     <section class="background inline-block project hide-on-mobile col s12 m6">
       <h2>T-shirt Shopping Cart</h2>
       <p>The Iron Yard Cincinnati week 2, day 3 assignment. This was updated with the week 2, day 4 assignment as well. This assignment added to the previous one by adding the time the item was added to the cart with moment js. I also added some animation when the cart opens as well as using obejcts and arrays to store the product info on the page. This was the first Javascript assignment involving creating a shopping cart and modifying UI elements.</p>
     </section>
-    <section class="skills inline-block col s12 m6">
+    <section class="skills project-2 inline-block col s12 m6">
+      <img src="img/tshirt-profile-screenshot.png" alt="John Patterson headshot" class="fade responsive-img">
     </section>
-  </div>
-  <div class="row no-margin">
+  </section>
+  <section class="row no-margin">
+    <section class="skills project-3 inline-block col s12 m6">
+      <img src="img/instagram-clone-screenshot.png" alt="John Patterson headshot" class="fade">
+    </section>
+    <section class="background inline-block project hide-on-mobile col s12 m6">
+      <h2>Instagram Clone</h2>
+      <p>The Iron Yard week 7, day 4 assignment. The goal of this assignment was to build a simple Instagram style app in Angular using concepts learned so far.</p>
+    </section>
+  </section>
+  <section class="row no-margin">
     <section class="contact inline-block col s12" id="wheretofindme">
       <h2>Where to find me</h2>
       <ol>
@@ -114,14 +144,14 @@
         </li>
       </ol>
     </section>
-  </div>
+  </section>
   <footer>
     <div class="logo-footer z-depth-3">JCP</div>
-    <p class="copyright"> Made with <i class="fa fa-heart" aria-hidden="true"></i> in Cincinnati. &#169;2016 John C. Patterson</p>
+    <p class="copyright"> Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> in Cincinnati. &#169; 2016 John C. Patterson</p>
   </footer>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <script src="js/main.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,6 @@
             box-sizing: border-box;
           }
           
-          // selectors
           * {
             @include border-box;
           }
@@ -22,21 +21,20 @@
             font-family: Helvetica;
           }
           
-          body {
-            width: 100%;
-          }
-          
+          //Display inline class
           .inline {
             display: inline;
           }
           
+          //Display inline-block class
+          .inline-block {
+            display: inline-block;
+          }
+          
+          //No margin class
           .no-margin {
             margin-top: 0;
             margin-bottom: 0;
-          }
-          
-          .inline-block {
-            display: inline-block;
           }
           
           //Header
@@ -49,16 +47,15 @@
             z-index: 100;
             padding: 28px 30px 28px 30px;
             vertical-align: middle;
-            // box-shadow: 0px 3px 5px gray;
             box-shadow: 0 9px 5px -7px #777;
             .logo-header {
-              font-size: 53px;
+              font-size: 45px;
               font-family: 'Aclonica', sans-serif;
               background-color: black;
               color: white;
               padding: 10px;
-              // box-shadow: 0 10px 6px -6px #777;
             }
+            //Navigation
             .nav-links {
               float: right;
               vertical-align: middle;
@@ -102,10 +99,13 @@
             }
           }
           
+          //Intro Container
           .intro-container {
-            margin-top: 125px;
+            margin-top: 109px;
+            margin-bottom: 0;
           }
           
+          //Intro Text
           .intro {
             font-family: 'Volkhov', serif;
             width: 75%;
@@ -114,19 +114,21 @@
             font-weight: 500;
           }
           
+          //Headshot Image
           .headshot {
             // width: 24.6%;
             // position: relative;
             img {
               // position: absolute;
               // top: 50%;
-              height: 40%;
+              max-height: 100%;
               width: 100%;
               display: block;
               // border: 2px solid gray;
             }
           }
           
+          //About Ms Section
           .background {
             padding: 85px !important;
             height: 530px;
@@ -138,6 +140,7 @@
             }
           }
           
+          // Skills Section
           .skills {
             padding: 85px !important;
             height: 530px;
@@ -161,10 +164,18 @@
             }
           }
           
-          .project-1 {
-            background-image: url('img/github-profile-screenshot.png');
+          //Project Sections
+          .project-1,
+          .project-2,
+          .project-3 {
+            padding: 20px !important;
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
           }
           
+          //Contact Section
           .contact {
             height: auto;
             background-color: black;
@@ -199,6 +210,7 @@
             }
           }
           
+          //Footer
           footer {
             height: 100px;
             background-color: white;
@@ -212,6 +224,8 @@
               bottom: 38px;
               i {
                 color: red;
+                margin: 0px 3px 0px 3px;
+                padding: 4px;
               }
             }
             .logo-footer {
@@ -227,16 +241,83 @@
             }
           }
           
+          //Animations
+          .header-container,
+          .header-container * {
+            transition: all 0.3s ease;
+          }
+          
+          .header-container.shrinked {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+          
+          .logo-header.shrinked {
+            font-size: 28px;
+          }
+          
+          .nav-links.shrinked {
+            padding-top: 5px;
+          }
+          
+          @keyframes pulse_animation {
+            0% {
+              transform: scale(1);
+            }
+            30% {
+              transform: scale(1);
+            }
+            40% {
+              transform: scale(1.3);
+            }
+            50% {
+              transform: scale(1);
+            }
+            60% {
+              transform: scale(1);
+            }
+            70% {
+              transform: scale(1.3);
+            }
+            80% {
+              transform: scale(1);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+          
+          .pulse {
+            animation-name: pulse_animation;
+            animation-duration: 5000ms;
+            transform-origin: 70% 70%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+          
+          .fade {
+            opacity: 0.4;
+            transition: opacity .3s ease-in-out;
+            -moz-transition: opacity .3s ease-in-out;
+            -webkit-transition: opacity .3s ease-in-out;
+          }
+          
+          .fade:hover {
+            opacity: 1;
+          }
+          
           //Mediq Queries
           @media (max-width: 1000px) {
             .intro {
               font-size: 3.0em;
             }
             .background {
-              padding: 40px !important;
+              padding: 30px !important;
+              height: 395px;
             }
             .skills {
-              padding: 40px !important;
+              padding: 30px !important;
+              height: 395px;
             }
           }
           
@@ -245,7 +326,7 @@
               font-size: 55px;
             }
             .intro {
-              font-size: 2.3em;
+              font-size: 2.5em;
             }
           }
           
@@ -265,6 +346,7 @@
             }
             .skills {
               padding: 20px !important;
+              height: 310px;
             }
             .contact ol li i {
               font-size: 60px;
@@ -278,22 +360,21 @@
             footer>p.copyright {
               font-size: 15px;
             }
-            .logo-footer {
-              // display: block !important;
-              // position: initial !important;
-            }
             @media (max-width: 600px) {
               .hide-on-mobile {
                 display: none;
               }
               .header-container {
-                padding: 15px 6px 15px 12px;
+                padding: 18px 6px 15px 12px;
                 .logo-header {
                   font-size: 28px;
                 }
               }
               .intro-container {
                 margin-top: 80px;
+                p.intro-text {
+                  padding-top: 14px;
+                }
               }
               .headshot {
                 padding: 0 !important;
@@ -339,7 +420,7 @@
                 font-weight: 500;
               }
               .nav-links {
-                font-size: 1em !important;
+                font-size: 15px !important;
               }
               .contact ol li i {
                 font-size: 40px;
@@ -387,7 +468,7 @@
                 padding: 0;
               }
               .contact ol {
-              	padding: 8px 3px 8px 3px;
+                padding: 8px 3px 8px 3px;
               }
               footer {
                 p.copyright {
