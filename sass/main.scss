@@ -66,6 +66,7 @@
               padding-top: 14px;
               font-size: 1.1em;
               ul {
+                display: inline;
                 li {
                   display: inline-block;
                   padding: 0 4px 2px 4px;
@@ -143,7 +144,6 @@
             background-color: black;
             text-align: center;
             color: white;
-            
             h2 {
               text-align: center;
               font-weight: 600;
@@ -160,14 +160,10 @@
               }
             }
           }
-
-          .project-1 {
-          	background-image: url('img/github-profile-screenshot.png');
-          	
-          }
           
-
-
+          .project-1 {
+            background-image: url('img/github-profile-screenshot.png');
+          }
           
           .contact {
             height: auto;
@@ -208,6 +204,7 @@
             background-color: white;
             position: relative;
             p.copyright {
+              display: inline;
               font-family: 'Volkhov', serif;
               font-size: 20px;
               position: absolute;
@@ -218,6 +215,7 @@
               }
             }
             .logo-footer {
+              display: inline;
               font-size: 30px;
               font-family: 'Aclonica', sans-serif;
               background-color: black;
@@ -234,9 +232,24 @@
             .intro {
               font-size: 3.0em;
             }
+            .background {
+              padding: 40px !important;
+            }
+            .skills {
+              padding: 40px !important;
+            }
           }
           
-          @media (max-width: 677px) {
+          @media (max-width: 825px) {
+            .contact ol li i {
+              font-size: 55px;
+            }
+            .intro {
+              font-size: 2.3em;
+            }
+          }
+          
+          @media (max-width: 680px) {
             .intro {
               font-size: 2.5em;
             }
@@ -247,15 +260,40 @@
                 height: 35%;
               }
             }
+            .background {
+              padding: 20px !important;
+            }
+            .skills {
+              padding: 20px !important;
+            }
+            .contact ol li i {
+              font-size: 60px;
+            }
+            .contact ol li {
+              padding: 10px 15px 10px 15px;
+            }
+            .contact ol {
+              padding: 10px 5px 10px 5px;
+            }
+            footer>p.copyright {
+              font-size: 15px;
+            }
+            .logo-footer {
+              // display: block !important;
+              // position: initial !important;
+            }
             @media (max-width: 600px) {
               .hide-on-mobile {
                 display: none;
               }
               .header-container {
                 padding: 15px 6px 15px 12px;
+                .logo-header {
+                  font-size: 28px;
+                }
               }
               .intro-container {
-                margin-top: 110px;
+                margin-top: 80px;
               }
               .headshot {
                 padding: 0 !important;
@@ -267,8 +305,54 @@
                 border-bottom: 3px solid white !important;
               }
             }
+            @media (max-width: 560px) {
+              footer {
+                p.copyright {
+                  left: 23px;
+                }
+                .logo-footer {
+                  right: 25px;
+                }
+              }
+            }
+            @media (max-width: 510px) {
+              footer {
+                height: 50px;
+                p.copyright {
+                  text-align: center;
+                  position: initial;
+                  display: block;
+                  margin-top: 6%;
+                }
+                .logo-footer {
+                  display: none;
+                }
+              }
+            }
+            @media (max-width: 480px) {
+              .header-container .logo-header {
+                font-size: 24px;
+              }
+              p.intro-text {
+                font-size: 0.6em;
+                line-height: 1.2;
+                font-weight: 500;
+              }
+              .nav-links {
+                font-size: 1em !important;
+              }
+              .contact ol li i {
+                font-size: 40px;
+                padding: 0;
+              }
+              footer {
+                p.copyright {
+                  font-size: 13px;
+                }
+              }
+            }
             @media (max-width: 420px) {
-              .logo {
+              .logo-header {
                 font-size: 20px;
               }
               .intro-container {
@@ -281,6 +365,54 @@
               }
               li.nav-links {
                 padding: 0 2px 2px 2px;
+              }
+            }
+            @media (max-width: 400px) {
+              .logo-header {
+                font-size: 20px;
+              }
+              .intro-container {
+                margin-top: 65px;
+              }
+              p.intro-text {
+                font-size: 0.8em;
+                line-height: 1.2;
+                font-weight: 500;
+              }
+              .nav-links {
+                font-size: 0.8em !important;
+              }
+              .contact ol li i {
+                font-size: 30px;
+                padding: 0;
+              }
+              .contact ol {
+              	padding: 8px 3px 8px 3px;
+              }
+              footer {
+                p.copyright {
+                  font-size: 12px;
+                }
+              }
+            }
+            @media (max-width: 320px) {
+              .header-container {
+                padding: 15px 6px 10px 12px;
+                .logo-header {
+                  font-size: 15px !important;
+                }
+              }
+              p.intro-text {
+                font-size: 0.6em;
+                line-height: 1.2;
+                font-weight: 500;
+              }
+              .nav-links {
+                font-size: 0.6em !important;
+              }
+              .contact ol li i {
+                font-size: 25px;
+                padding: 0;
               }
             }
           }
