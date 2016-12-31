@@ -189,7 +189,12 @@ footer {
     padding: 10px;
     position: absolute;
     right: 50px;
-    bottom: 35px; }
+    bottom: 35px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: linear; }
+    footer .logo-footer:hover {
+      color: orange; }
 
 .header-container,
 .header-container * {
@@ -374,6 +379,10 @@ footer {
     font-size: 0.8em;
     line-height: 1.2;
     font-weight: 500; }
+  .project-1 img,
+  .project-2 img,
+  .project-3 img {
+    width: 95%; }
   li.nav-links {
     padding: 0 2px 2px 2px; } }
 
