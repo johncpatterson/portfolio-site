@@ -54,6 +54,12 @@
               background-color: black;
               color: white;
               padding: 10px;
+              transition-property: color;
+              transition-duration: 0.3s;
+              transition-timing-function: linear;
+              &:hover {
+                color: orange;
+              }
             }
             //Navigation
             .nav-links {
@@ -101,7 +107,7 @@
           
           //Intro Container
           .intro-container {
-            margin-top: 109px;
+            margin-top: 120px;
             margin-bottom: 0;
           }
           
@@ -130,33 +136,45 @@
           
           //About Ms Section
           .background {
-            padding: 85px !important;
+            padding: 60px !important;
             height: 530px;
             vertical-align: top;
             line-height: 1.8;
+            font-size: 18px;
             h2 {
               text-align: center;
               font-weight: 600;
+            }
+            i.fa {
+              color: orange;
+              font-size: 20px;
             }
           }
           
           // Skills Section
           .skills {
-            padding: 85px !important;
+            padding: 60px !important;
             height: 530px;
             background-color: black;
             text-align: center;
             color: white;
+            font-size: 18px;
             h2 {
               text-align: center;
               font-weight: 600;
             }
+            h2.check-out-work-below {
+              padding-top: 120px;
+            }
             i {
               font-size: 25px;
-              color: orange;
+              &.fa-code,
+              &.fa-hand-o-down {
+                color: orange;
+              }
             }
             ol {
-              margin-top: 30px;
+              margin-top: 22px;
               li {
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -175,14 +193,19 @@
             }
           }
           
+          .project i.fa {
+            color: orange;
+            font-size: 20px;
+          }
+          
           //Contact Section
           .contact {
             height: auto;
             background-color: black;
             color: white;
             text-align: center;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
+            padding-top: 45px !important;
+            padding-bottom: 45px !important;
             h2 {
               text-align: center;
               font-weight: 600;
@@ -212,7 +235,7 @@
           
           //Footer
           footer {
-            height: 100px;
+            height: 120px;
             background-color: white;
             position: relative;
             p.copyright {
@@ -221,7 +244,7 @@
               font-size: 20px;
               position: absolute;
               left: 46px;
-              bottom: 38px;
+              bottom: 42px;
               i {
                 color: red;
                 margin: 0px 3px 0px 3px;
@@ -237,7 +260,7 @@
               padding: 10px;
               position: absolute;
               right: 50px;
-              bottom: 24px;
+              bottom: 35px;
             }
           }
           
@@ -307,17 +330,36 @@
           }
           
           //Mediq Queries
-          @media (max-width: 1000px) {
+          @media (max-width: 1150px) {
             .intro {
-              font-size: 3.0em;
+              font-size: 2.9em;
             }
             .background {
-              padding: 30px !important;
-              height: 395px;
+              padding: 28px !important;
+              font-size: 17px;
             }
             .skills {
-              padding: 30px !important;
+              padding: 28px !important;
+              font-size: 17px;
+            }
+          }
+          
+          @media (max-width: 1000px) {
+            .intro {
+              font-size: 2.7em;
+            }
+            .background {
+              padding: 28px !important;
               height: 395px;
+              font-size: 14px;
+            }
+            .skills {
+              padding: 28px !important;
+              height: 395px;
+              font-size: 14px;
+              h2.check-out-work-below {
+                padding-top: 55px;
+              }
             }
           }
           
@@ -330,23 +372,48 @@
             }
           }
           
-          @media (max-width: 680px) {
+          @media (max-width: 762px) {
             .intro {
               font-size: 2.5em;
             }
             .headshot {
-              padding-left: 0 !important;
+              // padding-left: 0 !important;
               img.john-headshot-1 {
-                padding-left: 0 !important;
-                height: 35%;
+                // padding-left: 0 !important;
+                height: 30%;
               }
             }
             .background {
-              padding: 20px !important;
+              font-size: 13px;
             }
             .skills {
-              padding: 20px !important;
+              font-size: 13px;
+            }
+          }
+          
+          @media (max-width: 680px) {
+            .intro {
+              font-size: 2.2em;
+            }
+            .headshot {
+              // padding-left: 0 !important;
+              img.john-headshot-1 {
+                // padding-left: 0 !important;
+                height: 25%;
+              }
+            }
+            .background {
+              padding: 16px !important;
               height: 310px;
+              font-size: 12px;
+            }
+            .skills {
+              padding: 16px !important;
+              height: 310px;
+              font-size: 12px;
+              h2.check-out-work-below {
+                padding-top: 10px;
+              }
             }
             .contact ol li i {
               font-size: 60px;
@@ -371,22 +438,41 @@
                 }
               }
               .intro-container {
-                margin-top: 80px;
+                margin-top: 90px;
                 p.intro-text {
                   padding-top: 14px;
                 }
               }
               .headshot {
-                padding: 0 !important;
+                // padding: 0 !important;
                 img.john-headshot-1 {
-                  height: 45%;
+                  height: 40%;
                 }
               }
-              .project {
-                border-bottom: 3px solid white !important;
+              .background {
+                padding: 10px !important;
               }
+              .skills {
+                padding: 10px !important;
+                height: 340px;
+                h2.check-out-work-below {
+                  padding-top: 40px;
+                }
+              }
+              .project-1 img,
+              .project-2 img,
+              .project-3 img {
+                width: 90%;
+              }
+              // .project>.fa {
+              //   font-size: 30px;
+              // }
             }
             @media (max-width: 560px) {
+              .contact ol li i {
+                font-size: 38px;
+                padding: 0;
+              }
               footer {
                 p.copyright {
                   left: 23px;
@@ -415,7 +501,7 @@
                 font-size: 24px;
               }
               p.intro-text {
-                font-size: 0.6em;
+                font-size: 23px;
                 line-height: 1.2;
                 font-weight: 500;
               }
@@ -423,7 +509,7 @@
                 font-size: 15px !important;
               }
               .contact ol li i {
-                font-size: 40px;
+                font-size: 36px;
                 padding: 0;
               }
               footer {
@@ -453,7 +539,7 @@
                 font-size: 20px;
               }
               .intro-container {
-                margin-top: 65px;
+                margin-top: 70px;
               }
               p.intro-text {
                 font-size: 0.8em;

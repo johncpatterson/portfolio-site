@@ -56,8 +56,10 @@
 <body ontouchstart=””>
   <header>
     <div class="header-container">
-      <div class="logo-header inline z-depth-3">JCP
-      </div>
+      <a href="index.html">
+        <div class="logo-header inline z-depth-3">JCP
+        </div>
+      </a>
       <div class="nav-links inline">
         <ul>
           <li><a href="#whoami">Who I Am</a></li>
@@ -79,15 +81,16 @@
       </section>
     </section>
   </section>
-  <section class="row no-margin" id="whoami">
+  <section class="row no-margin">
     <section class="background inline-block col s12 m6">
-      <h2>Who Am I ?</h2>
-      <p>My background story here... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque, consequuntur veritatis! Animi error hic ad ipsum blanditiis porro a placeat iusto perspiciatis sed iste eius nam quis et, laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rerum accusantium ducimus, excepturi voluptate praesentium deserunt recusandae adipisci sint nihil voluptatum atque, minima fuga iste blanditiis aut, repellendus vitae ipsum.</p>
+      <h2 id="whoami"><i class="fa fa-user" aria-hidden="true"></i>
+Who Am I ?</h2>
+      <p>Hi, I'm John. I've always been an avid technology user and geek and programming has always intrigued me. I always thought it was too hard and only for people who were good at math but that did not stop me from learning about it on my own. Once I started I was hooked. As a result I decided to change careers and joined The Iron Yard, recently completing the Front-End Web Developement program. I am incredibly excited to work in such an exciting industry with so many intersting and friendly people. When not doing programming I enjoy working out, listening to music, watching football and hanging with my wife and new baby girl. </p>
     </section>
     <section class="skills inline-block col s12 m6">
-      <h2><i class="fa fa-code" aria-hidden="true"></i>
+      <h2 id="whatido">
   What I do <i class="fa fa-code" aria-hidden="true"></i>
-  </h2>
+      </h2>
       <ol>
         <li>HTML5 <i class="fa fa-html5" aria-hidden="true"></i>
         </li>
@@ -99,20 +102,25 @@
         </li>
         <li>Sass</li>
       </ol>
+      <h2 class="check-out-work-below">
+  <i class="fa fa-hand-o-down" aria-hidden="true"></i> Check out some of my work from my time <br>@ The Iron Yard Cincinnati...
+  </h2>
     </section>
   </section>
   <section class="row no-margin">
-    <section class="skills project-1 inline-block col s12 m6" id="whatido">
+    <section class="skills project-1 inline-block col s12 m6">
       <img src="img/github-profile-screenshot.png" alt="John Patterson headshot" class="fade responsive-img">
     </section>
     <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2>GitHub Profile Recreation</h2>
+      <h2>GitHub Profile Recreation <i class="fa fa-github-alt" aria-hidden="true"></i>
+</h2>
       <p>The Iron Yard week 4, day 4 assignment. The goal of this assignment was to re-create our user profile page on GitHub using HTML and CSS. The content of the page was to be pulled in via the GitHub API.</p>
     </section>
   </section>
   <section class="row no-margin">
     <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2>T-shirt Shopping Cart</h2>
+      <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+T-shirt Shopping Cart</h2>
       <p>The Iron Yard Cincinnati week 2, day 3 assignment. This was updated with the week 2, day 4 assignment as well. This assignment added to the previous one by adding the time the item was added to the cart with moment js. I also added some animation when the cart opens as well as using obejcts and arrays to store the product info on the page. This was the first Javascript assignment involving creating a shopping cart and modifying UI elements.</p>
     </section>
     <section class="skills project-2 inline-block col s12 m6">
@@ -124,12 +132,13 @@
       <img src="img/instagram-clone-screenshot.png" alt="John Patterson headshot" class="fade">
     </section>
     <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2>Instagram Clone</h2>
+      <h2>Instagram Clone <i class="fa fa-instagram" aria-hidden="true"></i>
+</h2>
       <p>The Iron Yard week 7, day 4 assignment. The goal of this assignment was to build a simple Instagram style app in Angular using concepts learned so far.</p>
     </section>
   </section>
-  <section class="row no-margin">
-    <section class="contact inline-block col s12" id="wheretofindme">
+  <section class="row no-margin" id="wheretofindme">
+    <section class="contact inline-block col s12">
       <h2>Where to find me</h2>
       <ol>
         <li><a href="https://www.linkedin.com/in/john-patterson-85b240131" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -140,13 +149,17 @@
         </li>
         <li><a href="https://medium.com/@johncpatterson" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
         </li>
+        <li><a href="mailto:john@johncpatterson.io?Subject=Hello!"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </li>
         <li><a href="tel:513-484-4738"><i class="fa fa-phone" aria-hidden="true"></a></i>
         </li>
       </ol>
     </section>
   </section>
   <footer>
-    <div class="logo-footer z-depth-3">JCP</div>
+    <a href="index.html">
+      <div class="logo-footer z-depth-3">JCP</div>
+    </a>
     <p class="copyright"> Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> in Cincinnati. &#169; 2016 John C. Patterson</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
