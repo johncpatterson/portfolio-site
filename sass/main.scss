@@ -543,6 +543,7 @@
                 font-size: 15px !important;
               }
               .carousel-size {
+                width: 100%;
                 height: 40%;
                 img {
                   width: 100%;
@@ -580,14 +581,15 @@
               .project-4 img {
                 width: 95%;
               }
-              .carousel-size {
-                width: 95%;
-                // img {
-                //   width: 95%;
-                //   // max-height: 100%;
-                // }
-                // height: 100%;
-                // max-width: 100%;
+              .project-4 {
+                .carousel-size {
+                  width: 100%;
+                  height: 45%;
+                  img {
+                    width: 95%;
+                    height: 100%;
+                  }
+                }
               }
               .project-description-mobile {
                 width: 95% !important;
