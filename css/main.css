@@ -139,7 +139,7 @@ html {
   .project-2 .carousel-size,
   .project-3 .carousel-size,
   .project-4 .carousel-size {
-    height: 100%; }
+    height: 60%; }
     .project-1 .carousel-size img,
     .project-2 .carousel-size img,
     .project-3 .carousel-size img,
@@ -393,6 +393,11 @@ footer {
     font-weight: 500; }
   .nav-links {
     font-size: 15px !important; }
+  .carousel-size {
+    height: 40%; }
+    .carousel-size img {
+      width: 90%;
+      height: 50%; }
   .contact ol li i {
     font-size: 36px;
     padding: 0; }
@@ -414,6 +419,8 @@ footer {
   .project-2 img,
   .project-3 img,
   .project-4 img {
+    width: 95%; }
+  .carousel-size {
     width: 95%; }
   .project-description-mobile {
     width: 95% !important; }

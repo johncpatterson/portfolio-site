@@ -193,12 +193,11 @@
               max-height: 100%;
             }
             .carousel-size {
+              height: 60%;
               img {
                 width: 90%;
                 height: 100%;
               }
-              height: 100%;
-              // max-width: 100%;
             }
           }
           
@@ -470,7 +469,6 @@
                 }
               }
               .headshot {
-                // padding: 0 !important;
                 img.john-headshot-1 {
                   height: 40%;
                 }
@@ -544,6 +542,13 @@
               .nav-links {
                 font-size: 15px !important;
               }
+              .carousel-size {
+                height: 40%;
+                img {
+                  width: 90%;
+                  height: 50%;
+                }
+              }
               .contact ol li i {
                 font-size: 36px;
                 padding: 0;
@@ -574,6 +579,15 @@
               .project-3 img,
               .project-4 img {
                 width: 95%;
+              }
+              .carousel-size {
+                width: 95%;
+                // img {
+                //   width: 95%;
+                //   // max-height: 100%;
+                // }
+                // height: 100%;
+                // max-width: 100%;
               }
               .project-description-mobile {
                 width: 95% !important;
