@@ -1,6 +1,14 @@
 jQuery(function() {
 
 
+  $(document).ready(function() {
+    $('.carousel.carousel-slider').carousel({full_width: true});
+    setInterval(function() {
+    $('.carousel').carousel('next');
+  }, 3000); // every 2 seconds
+
+  });
+
   $(document).scroll(function() {
     if ($(this).scrollTop() > 10) { //Adjust 150
       $('.header-container').addClass('shrinked');

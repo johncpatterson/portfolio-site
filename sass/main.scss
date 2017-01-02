@@ -134,7 +134,7 @@
             }
           }
           
-          //About Ms Section
+          //About Me Section
           .background {
             padding: 60px !important;
             height: 530px;
@@ -164,7 +164,7 @@
               font-weight: 600;
             }
             h2.check-out-work-below {
-              padding-top: 120px;
+              padding-top: 110px;
             }
             i {
               font-size: 25px;
@@ -185,17 +185,31 @@
           //Project Sections
           .project-1,
           .project-2,
-          .project-3 {
+          .project-3,
+          .project-4 {
             padding: 20px !important;
             img {
               max-width: 100%;
               max-height: 100%;
+            }
+            .carousel-size {
+              img {
+                width: 90%;
+                height: 100%;
+              }
+              height: 100%;
+              // max-width: 100%;
             }
           }
           
           .project i.fa {
             color: orange;
             font-size: 20px;
+          }
+          
+          .project-description-mobile {
+            background-color: white;
+            color: black;
           }
           
           //Contact Section
@@ -211,7 +225,7 @@
               font-weight: 600;
             }
             ol {
-              padding: 10px 30px 10px 30px;
+              padding: 10px 28px 10px 28px;
               display: inline-block;
               li {
                 display: inline-block;
@@ -273,7 +287,7 @@
           //Animations
           .header-container,
           .header-container * {
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
           }
           
           .header-container.shrinked {
@@ -364,7 +378,7 @@
               height: 395px;
               font-size: 14px;
               h2.check-out-work-below {
-                padding-top: 55px;
+                padding-top: 45px;
               }
             }
           }
@@ -417,8 +431,14 @@
               padding: 16px !important;
               height: 310px;
               font-size: 12px;
+              ol {
+                margin-top: 9px;
+              }
+              ol li {
+                padding: 3px;
+              }
               h2.check-out-work-below {
-                padding-top: 10px;
+                padding-top: 0;
               }
             }
             .contact ol li i {
@@ -459,20 +479,30 @@
                 padding: 10px !important;
               }
               .skills {
-                padding: 10px !important;
-                height: 340px;
+                padding: 10px 10px 40px 10px !important;
+                height: auto;
                 h2.check-out-work-below {
                   padding-top: 40px;
                 }
               }
               .project-1 img,
               .project-2 img,
-              .project-3 img {
+              .project-3 img,
+              .project-4 img {
                 width: 90%;
               }
-              // .project>.fa {
-              //   font-size: 30px;
-              // }
+              .project-description-mobile {
+                width: 90% !important;
+                margin-top: 6px;
+                padding: 10px;
+                h2 {
+                  margin-bottom: 5px;
+                }
+                i {
+                  color: orange;
+                  font-size: 16px;
+                }
+              }
             }
             @media (max-width: 560px) {
               .contact ol li i {
@@ -541,8 +571,12 @@
               }
               .project-1 img,
               .project-2 img,
-              .project-3 img {
+              .project-3 img,
+              .project-4 img {
                 width: 95%;
+              }
+              .project-description-mobile {
+                width: 95% !important;
               }
               li.nav-links {
                 padding: 0 2px 2px 2px;
