@@ -110,6 +110,8 @@ html {
   .background .project-skills {
     padding-top: 20px;
     text-align: center; }
+  .background .project-skills-final {
+    text-align: center; }
   .background .project-demo {
     text-align: center; }
   .background .project-github {
