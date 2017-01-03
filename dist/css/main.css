@@ -1,6 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -37,7 +35,7 @@ html {
     transition-duration: 0.3s;
     transition-timing-function: linear; }
     .header-container .logo-header:hover {
-      color: #f09b00; }
+      color: orange; }
   .header-container .nav-links {
     float: right;
     vertical-align: middle;
@@ -62,15 +60,12 @@ html {
             height: 3px;
             bottom: 0;
             left: 0;
-            background-color: #f09b00;
+            background-color: orange;
             visibility: hidden;
-            -webkit-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s; }
           .header-container .nav-links ul li a:hover:before {
             visibility: visible;
-            -webkit-transform: scaleX(1);
             transform: scaleX(1); }
 
 .intro-container {
@@ -95,25 +90,12 @@ html {
   vertical-align: top;
   line-height: 1.8;
   font-size: 18px; }
-  .background a {
-    text-decoration: underline;
-    color: black; }
-    .background a:hover {
-      color: #f09b00;
-      text-decoration: none; }
   .background h2 {
     text-align: center;
     font-weight: 600; }
   .background i.fa {
-    color: #f09b00;
+    color: orange;
     font-size: 18px; }
-  .background .project-skills {
-    padding-top: 20px;
-    text-align: center; }
-  .background .project-demo {
-    text-align: center; }
-  .background .project-github {
-    text-align: center; }
   .background span.iron-yard-week {
     font-style: italic; }
 
@@ -132,7 +114,7 @@ html {
   .skills i {
     font-size: 25px; }
     .skills i.fa-code, .skills i.fa-hand-o-down {
-      color: #f09b00; }
+      color: orange; }
   .skills ol {
     margin-top: 22px; }
     .skills ol li {
@@ -163,7 +145,7 @@ html {
       height: 100%; }
 
 .project i.fa {
-  color: #f09b00;
+  color: orange;
   font-size: 20px; }
 
 .project-screenshot-opacity {
@@ -172,19 +154,6 @@ html {
 .project-description-mobile {
   background-color: white;
   color: black; }
-  .project-description-mobile a {
-    text-decoration: underline;
-    color: black; }
-    .project-description-mobile a:hover {
-      color: #f09b00;
-      text-decoration: none; }
-  .project-description-mobile .project-skills {
-    padding-top: 15px;
-    text-align: center; }
-  .project-description-mobile .project-demo {
-    text-align: center; }
-  .project-description-mobile .project-github {
-    text-align: center; }
   .project-description-mobile span.iron-yard-week {
     font-style: italic; }
 
@@ -206,7 +175,7 @@ html {
       padding: 10px 25px 10px 25px; }
       .contact ol li i {
         font-size: 95px;
-        color: #f09b00;
+        color: orange;
         transition-property: color;
         transition-duration: 0.3s;
         transition-timing-function: linear; }
@@ -244,7 +213,7 @@ footer {
     transition-duration: 0.3s;
     transition-timing-function: linear; }
     footer .logo-footer:hover {
-      color: #f09b00; }
+      color: orange; }
 
 .header-container,
 .header-container * {
@@ -379,9 +348,6 @@ footer {
     padding: 16px !important;
     height: 310px;
     font-size: 12px; }
-    .background p.project-skills-final {
-      padding-top: 0;
-      text-align: center; }
   .skills {
     padding: 16px !important;
     height: 310px;
@@ -416,9 +382,6 @@ footer {
     height: 40%; }
   .background {
     padding: 10px !important; }
-    .background p.project-skills-final {
-      padding-top: 20px;
-      text-align: center; }
   .skills {
     padding: 10px 10px 30px 10px !important;
     height: auto; }
@@ -442,7 +405,7 @@ footer {
     .project-description-mobile h2 {
       margin-bottom: 5px; }
     .project-description-mobile i {
-      color: #f09b00;
+      color: orange;
       font-size: 16px; } }
 
 @media (max-width: 560px) {
@@ -504,7 +467,7 @@ footer {
     width: 95%; }
   .project-4 .carousel-size {
     width: 100%;
-    height: 85%; }
+    height: 45%; }
     .project-4 .carousel-size img {
       width: 95%;
       height: 100%; }
