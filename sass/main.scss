@@ -74,7 +74,7 @@
             display: inline;
             li {
               display: inline-block;
-              padding: 0 4px 2px 4px;
+              padding: 0 6px 2px 6px;
               a {
                 text-decoration: none;
                 position: relative;
@@ -108,9 +108,14 @@
       }
       
       //Intro Container
+      .intro-container-row {
+        margin-top: 0;
+        margin-bottom: 70px;
+      }
+      
       .intro-container {
-        margin-top: 125px;
-        margin-bottom: 0;
+        margin-top: 170px;
+        margin-bottom: 30;
       }
       
       //Intro Text
@@ -133,11 +138,13 @@
       
       //About Me Section
       .background {
+        position: relative;
         padding: 60px !important;
         height: 530px;
         vertical-align: top;
         line-height: 1.8;
         font-size: 18px;
+        text-align: center;
         a {
           text-decoration: underline;
           color: $font-color-dark;
@@ -149,23 +156,26 @@
         h2 {
           text-align: center;
           font-weight: 600;
-        }
-        i.fa {
-          color: $accent-color;
-          font-size: 18px;
+          font-size: 20px;
+          i.fa {
+            color: $accent-color;
+            font-size: 25px;
+          }
         }
         .project-skills {
           padding-top: 20px;
           text-align: center;
-        }
-        p.project-skills-final {
+          p.project-skills-final {
             text-align: center;
+          }
         }
-        .project-demo {
+        p.project-demo {
           text-align: center;
+          display: inline-block;
         }
-        .project-github {
+        p.project-github {
           text-align: center;
+          display: inline-block;
         }
         span.iron-yard-week {
           font-style: italic;
@@ -183,22 +193,26 @@
         h2 {
           text-align: center;
           font-weight: 600;
+          font-size: 20px;
+          i {
+            font-size: 25px;
+            &.fa-code,
+            &.fa-hand-o-down {
+              color: $accent-color;
+            }
+          }
         }
         h2.check-out-work-below {
-          padding-top: 110px;
-        }
-        i {
-          font-size: 25px;
-          &.fa-code,
-          &.fa-hand-o-down {
-            color: $accent-color;
-          }
+          padding-top: 100px;
         }
         ol {
           margin-top: 22px;
           li {
             padding-top: 5px;
             padding-bottom: 5px;
+            i {
+              font-size: 25px;
+            }
           }
         }
       }
@@ -233,7 +247,7 @@
       
       .project-description-mobile {
         background-color: $bg-color-light;
-        color: black;
+        color: $bg-color-dark;
         a {
           text-decoration: underline;
           color: $font-color-dark;
@@ -241,19 +255,6 @@
             color: $accent-color;
             text-decoration: none;
           }
-        }
-        .project-skills {
-          padding-top: 15px;
-          text-align: center;
-        }
-        p.project-skills-final {
-            text-align: center;
-        }
-        .project-demo {
-          text-align: center;
-        }
-        .project-github {
-          text-align: center;
         }
         span.iron-yard-week {
           font-style: italic;
@@ -471,13 +472,23 @@
           padding: 28px !important;
           height: 395px;
           font-size: 14px;
+          h2 {
+            font-size: 17px;
+            i.fa {
+              font-size: 18px;
+            }
+          }
         }
         .skills {
           padding: 28px !important;
           height: 395px;
           font-size: 14px;
+          i.fa {
+            font-size: 18px;
+          }
           h2.check-out-work-below {
-            padding-top: 45px;
+            padding-top: 20px;
+            font-size: 17px;
           }
         }
       }
@@ -518,16 +529,25 @@
           }
         }
         .background {
-          padding: 16px !important;
+          padding: 13px !important;
           height: 310px;
           font-size: 12px;
+          h2 {
+            font-size: 15px;
+          }
           p.project-skills-final {
             padding-top: 0;
             text-align: center;
           }
         }
+        // .project-4>p.project-demo {
+        //    display: inline-block;
+        //  }
+        //  .project-4>p.project-github {
+        //    display: inline-block;
+        //  }
         .skills {
-          padding: 16px !important;
+          padding: 13px !important;
           height: 310px;
           font-size: 12px;
           ol {
@@ -537,7 +557,7 @@
             padding: 3px;
           }
           h2.check-out-work-below {
-            padding-top: 0;
+            padding-top: 35px;
           }
         }
         .contact ol li i {

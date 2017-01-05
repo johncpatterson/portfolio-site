@@ -5,7 +5,6 @@ jQuery(function() {
     var scroll_pos_1 = 450;
 
     if (y_scroll_pos > scroll_pos_1) {
-      console.log(window.pageYOffset)
       $("#project-screenshot-1").addClass("fadein");
       $("#project-screenshot-1").removeClass("project-screenshot-opacity");
     }
