@@ -95,14 +95,13 @@ html {
 
 .background {
   position: relative;
-  padding: 60px !important;
+  padding: 50px 60px 60px 60px !important;
   height: 530px;
   vertical-align: top;
   line-height: 1.8;
   font-size: 18px;
   text-align: center; }
   .background a {
-    text-decoration: underline;
     color: black; }
     .background a:hover {
       color: #f09b00;
@@ -129,7 +128,7 @@ html {
     font-style: italic; }
 
 .skills {
-  padding: 60px !important;
+  padding: 50px 60px 60px 60px !important;
   height: 530px;
   background-color: black;
   text-align: center;

@@ -139,14 +139,14 @@
       //About Me Section
       .background {
         position: relative;
-        padding: 60px !important;
+        padding: 50px 60px 60px 60px !important;
         height: 530px;
         vertical-align: top;
         line-height: 1.8;
         font-size: 18px;
         text-align: center;
         a {
-          text-decoration: underline;
+          // text-decoration: underline;
           color: $font-color-dark;
           &:hover {
             color: $accent-color;
@@ -184,7 +184,7 @@
       
       // Skills Section
       .skills {
-        padding: 60px !important;
+        padding: 50px 60px 60px 60px !important;
         height: 530px;
         background-color: $bg-color-dark;
         text-align: center;
