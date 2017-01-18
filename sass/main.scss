@@ -142,7 +142,7 @@
         padding: 50px 60px 60px 60px !important;
         height: 530px;
         vertical-align: top;
-        line-height: 1.8;
+        line-height: 1.5;
         font-size: 18px;
         text-align: center;
         a {
@@ -190,6 +190,15 @@
         text-align: center;
         color: white;
         font-size: 18px;
+        line-height: 1;
+        a {
+          text-decoration: underline;
+          color: $accent-color;
+          &:hover {
+            text-decoration: none;
+            color: $font-color-light;
+          }
+        }
         h2 {
           text-align: center;
           font-weight: 600;
@@ -202,9 +211,6 @@
             }
           }
         }
-        h2.check-out-work-below {
-          padding-top: 100px;
-        }
         ol {
           margin-top: 22px;
           li {
@@ -214,6 +220,14 @@
               font-size: 25px;
             }
           }
+        }
+        h2.resume {
+          font-size: 21px;
+          margin-top: 20px;
+          color: $font-color-light;
+        }
+        h2.check-out-work-below {
+          padding-top: 70px;
         }
       }
       
@@ -272,6 +286,7 @@
         h2 {
           text-align: center;
           font-weight: 600;
+          font-size: 20px;
         }
         ol {
           padding: 10px 28px 10px 28px;
@@ -302,8 +317,17 @@
         background-color: $bg-color-light;
         position: relative;
         p.copyright {
+          a:link,
+          a:visited {
+            text-decoration: none;
+            color: $font-color-dark;
+          }
+          a:hover {
+            color: $accent-color;
+          }
           display: inline;
-          font-family: 'Volkhov', serif;
+          font-family: 'Volkhov',
+          serif;
           font-size: 20px;
           position: absolute;
           left: 46px;
@@ -490,6 +514,11 @@
             padding-top: 20px;
             font-size: 17px;
           }
+          h2.resume {
+            // padding-top: 20px;
+            font-size: 17px;
+          }
+
         }
       }
       
@@ -530,7 +559,7 @@
         }
         .background {
           padding: 13px !important;
-          height: 310px;
+          height: 260px;
           font-size: 12px;
           h2 {
             font-size: 15px;
@@ -540,12 +569,6 @@
             text-align: center;
           }
         }
-        // .project-4>p.project-demo {
-        //    display: inline-block;
-        //  }
-        //  .project-4>p.project-github {
-        //    display: inline-block;
-        //  }
         .skills {
           padding: 13px !important;
           height: 310px;
@@ -557,7 +580,8 @@
             padding: 3px;
           }
           h2.check-out-work-below {
-            padding-top: 35px;
+            padding-top: 25px;
+            font-size: 14px;
           }
         }
         .contact ol li i {
@@ -584,10 +608,13 @@
             font-size: 28px;
           }
         }
-        .intro-container {
-          margin-top: 90px;
-          p.intro-text {
-            padding-top: 14px;
+        .intro-container-row {
+          margin-bottom: 30px;
+          .intro-container {
+            margin-top: 80px;
+            p.intro-text {
+              padding-top: 14px;
+            }
           }
         }
         .headshot {
@@ -597,14 +624,17 @@
         }
         .background {
           padding: 10px !important;
+          font-size: .9em;
+          line-height: 1.6;
           p.project-skills-final {
-            padding-top: 20px;
+            padding-top: 10px;
             text-align: center;
           }
         }
         .skills {
-          padding: 10px 10px 30px 10px !important;
+          padding: 20px 10px 30px 10px !important;
           height: auto;
+          line-height: 1.1;
           h2.check-out-work-below {
             padding-top: 45px;
           }
@@ -627,8 +657,9 @@
         }
         .project-description-mobile {
           width: 90% !important;
-          margin-top: 6px;
+          margin-top: -1px;
           padding: 10px;
+          font-size: 1.1em;
           h2 {
             margin-bottom: 5px;
           }
@@ -709,6 +740,7 @@
         }
         .background-story {
           height: 260px;
+          font-size: .8em;
         }
         p.intro-text {
           font-size: 0.8em;
