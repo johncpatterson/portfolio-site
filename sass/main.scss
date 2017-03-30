@@ -3,7 +3,7 @@
       $bg-color-dark: black;
       $font-color-light: white;
       $font-color-dark: black;
-      $accent-color: darken(orange, 3%);
+      $accent-color: darken(orange, 4%);
       $logo-font: 'Alice',
       serif;
       // Sass mixins
@@ -212,10 +212,12 @@
           }
         }
         ol {
-          margin-top: 22px;
+          margin-top: 18px;
+          // list-style-type: disc;
+          list-style-position: inside;
           li {
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding-top: 4px;
+            padding-bottom: 4px;
             i {
               font-size: 25px;
             }
@@ -227,7 +229,7 @@
           color: $font-color-light;
         }
         h2.check-out-work-below {
-          padding-top: 70px;
+          padding-top: 28px;
         }
       }
       
@@ -580,7 +582,7 @@
             padding: 3px;
           }
           h2.check-out-work-below {
-            padding-top: 25px;
+            padding-top: 10 px;
             font-size: 14px;
           }
         }

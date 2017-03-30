@@ -37,7 +37,7 @@ html {
     transition-duration: 0.3s;
     transition-timing-function: linear; }
     .header-container .logo-header:hover {
-      color: #f09b00; }
+      color: #eb9800; }
   .header-container .nav-links {
     float: right;
     vertical-align: middle;
@@ -62,7 +62,7 @@ html {
             height: 3px;
             bottom: 0;
             left: 0;
-            background-color: #f09b00;
+            background-color: #eb9800;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -104,14 +104,14 @@ html {
   .background a {
     color: black; }
     .background a:hover {
-      color: #f09b00;
+      color: #eb9800;
       text-decoration: none; }
   .background h2 {
     text-align: center;
     font-weight: 600;
     font-size: 20px; }
     .background h2 i.fa {
-      color: #f09b00;
+      color: #eb9800;
       font-size: 25px; }
   .background .project-skills {
     padding-top: 20px;
@@ -137,7 +137,7 @@ html {
   line-height: 1; }
   .skills a {
     text-decoration: underline;
-    color: #f09b00; }
+    color: #eb9800; }
     .skills a:hover {
       text-decoration: none;
       color: white; }
@@ -148,12 +148,13 @@ html {
     .skills h2 i {
       font-size: 25px; }
       .skills h2 i.fa-code, .skills h2 i.fa-hand-o-down {
-        color: #f09b00; }
+        color: #eb9800; }
   .skills ol {
-    margin-top: 22px; }
+    margin-top: 18px;
+    list-style-position: inside; }
     .skills ol li {
-      padding-top: 5px;
-      padding-bottom: 5px; }
+      padding-top: 4px;
+      padding-bottom: 4px; }
       .skills ol li i {
         font-size: 25px; }
   .skills h2.resume {
@@ -161,7 +162,7 @@ html {
     margin-top: 20px;
     color: white; }
   .skills h2.check-out-work-below {
-    padding-top: 70px; }
+    padding-top: 28px; }
 
 .project-1,
 .project-2,
@@ -187,7 +188,7 @@ html {
       height: 100%; }
 
 .project i.fa {
-  color: #f09b00;
+  color: #eb9800;
   font-size: 20px; }
 
 .project-screenshot-opacity {
@@ -200,7 +201,7 @@ html {
     text-decoration: underline;
     color: black; }
     .project-description-mobile a:hover {
-      color: #f09b00;
+      color: #eb9800;
       text-decoration: none; }
   .project-description-mobile span.iron-yard-week {
     font-style: italic; }
@@ -224,7 +225,7 @@ html {
       padding: 10px 25px 10px 25px; }
       .contact ol li i {
         font-size: 95px;
-        color: #f09b00;
+        color: #eb9800;
         transition-property: color;
         transition-duration: 0.3s;
         transition-timing-function: linear; }
@@ -249,7 +250,7 @@ footer {
       text-decoration: none;
       color: black; }
     footer p.copyright a:hover {
-      color: #f09b00; }
+      color: #eb9800; }
     footer p.copyright i {
       color: red;
       margin: 0px 3px 0px 3px;
@@ -268,7 +269,7 @@ footer {
     transition-duration: 0.3s;
     transition-timing-function: linear; }
     footer .logo-footer:hover {
-      color: #f09b00; }
+      color: #eb9800; }
 
 .header-container,
 .header-container * {
@@ -426,7 +427,7 @@ footer {
     .skills ol li {
       padding: 3px; }
     .skills h2.check-out-work-below {
-      padding-top: 25px;
+      padding-top: 10 px;
       font-size: 14px; }
   .contact ol li i {
     font-size: 55px; }
@@ -484,7 +485,7 @@ footer {
     .project-description-mobile h2 {
       margin-bottom: 5px; }
     .project-description-mobile i {
-      color: #f09b00;
+      color: #eb9800;
       font-size: 16px; } }
 
 @media (max-width: 560px) {
