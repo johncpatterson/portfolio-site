@@ -1,6 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -64,13 +62,10 @@ html {
             left: 0;
             background-color: #eb9800;
             visibility: hidden;
-            -webkit-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s; }
           .header-container .nav-links ul li a:hover:before {
             visibility: visible;
-            -webkit-transform: scaleX(1);
             transform: scaleX(1); }
 
 .intro-container-row {
