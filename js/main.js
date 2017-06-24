@@ -1,5 +1,10 @@
 jQuery(function() {
 
+  var today = new Date();
+  var year = today.getFullYear();
+
+  $("#date_year").html(year);
+
   $(window).scroll(function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_1 = 450;
