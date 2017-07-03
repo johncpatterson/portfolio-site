@@ -4,7 +4,7 @@ jQuery(function () {
   let year = today.getFullYear();
 
   $("#date_year").html(year);
-  console.log("test test");
+  //console.log("test test");
 
   $(window).scroll(function () {
     let y_scroll_pos = window.pageYOffset;
