@@ -1,293 +1,345 @@
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>John C. Patterson</title>
+		<!-- favicons-->
+		<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="img/favicons/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Aclonica|Volkhov|Alice" rel="stylesheet" />
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="https://use.fontawesome.com/0e26b451b3.js"></script>
+		<!-- Materilize -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" />
+		<!-- CSS Reset -->
+		<link rel="stylesheet" href="./dist/css/reset.css" />
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./dist/css/main.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-88917022-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>John C. Patterson</title>
-  <!-- favicons-->
-  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="img/favicons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Aclonica|Volkhov|Alice" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://use.fontawesome.com/0e26b451b3.js"></script>
-  <!-- Materilize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-  <!-- CSS Reset -->
-  <link rel="stylesheet" href="./dist/css/reset.css">
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./dist/css/main.css">
-  <!-- Google Analytics -->
-  <script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+			gtag('config', 'UA-88917022-1');
+		</script>
+	</head>
 
-  ga('create', 'UA-88917022-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-</head>
-
-<body ontouchstart=””>
-  <header>
-    <div class="header-container">
-      <a href="index.html">
-        <div class="logo-header inline z-depth-3">JCP
-        </div>
-      </a>
-      <div class="nav-links inline">
-        <ul>
-          <li><a href="#whoami">Who I Am</a></li>
-          <li><a href="#whatido">What I do</a></li>
-          <li><a href="#wheretofindme">Where to Find Me</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section class="row intro-container-row">
-    <section class="intro-container">
-      <section class="headshot inline-block col s12 m4">
-        <img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1 responsive-img z-depth-3">
-      </section>
-      <section class="intro inline-block col s12 m8">
-        <p class="intro-text">
-          Hey! I'm John and I like to build things on the web. Check out my work...
-        </p>
-      </section>
-      <span id="whatido"></span>
-    </section>
-  </section>
-  <span id="whoami"></span>
-  <section class="row no-margin">
-    <section class="background background-story inline-block col s12 m6">
-      <h2><i class="fa fa-user" aria-hidden="true"></i> Who Am I ?</h2>
-      <p>Hi, I'm John! I've always been an avid technology user and geek and programming has always intrigued me. I always thought it was too hard and only for people who were good at math but that did not stop me from learning about it on my own. Once I started I was hooked. As a result I decided to change careers and joined The Iron Yard, recently completing the Front-End Web Development program. I am incredibly excited to work in this industry with so many intersting and friendly people. When not doing programming I enjoy working out, listening to music, watching football and hanging with my wife and new baby girl. </p>
-    </section>
-    <section class="skills inline-block col s12 m6">
-      <h2>What I do <i class="fa fa-code" aria-hidden="true"></i>
-      </h2>
-      <ol>
-        <li>HTML5</li>
-        <li>CSS3 </li>
-        <li>Sass</li>
-        <li>Javascript</li>
-        <li>jQuery</li>
-        <li>Angular</li>
-        <li>Sketch</li>
-        <li>Bootstrap</li>
-        <li>Materialize</li>
-        <li>Git & GitHub</li>
-      </ol>
-      <h2 class="resume"><a href="https://drive.google.com/file/d/0B6sVPYLk-iSwZngwZ0xqRVdNR3c/view?usp=sharing" target="_blank">My Resume</a></h2>
-      <h2 class="check-out-work-below">
-  <i class="fa fa-hand-o-down" aria-hidden="true"></i> Check out some of my work from my time @ The Iron Yard Cincinnati...
-  </h2>
-    </section>
-  </section>
-  <!-- Github Project -->
-  <section class="row no-margin">
-    <section class="skills project-1 inline-block col s12 m6">
-      <a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile" target="_blank"><img src="img/github-profile-screenshot.png" alt="John Patterson headshot" class="responsive-img project-screenshot-opacity" id="project-screenshot-1"></a>
-      <!-- Github Project Mobile-->
-      <section class="project-description-mobile center-block hide-on-med-and-up">
-        <h2>GitHub Profile Recreation <i class="fa fa-github-alt" aria-hidden="true"></i></h2>
-        <p><span class="iron-yard-week">The Iron Yard week 4, day 4 assignment.</span> The goal of this assignment was to re-create our user profile page on GitHub using HTML and CSS. The content of the page was retrieved using Ajax via the GitHub API.</p>
-        <br>
-        <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
-        <a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile/" target="_blank">
-          <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-          </p>
-        </a>
-        <a href="https://github.com/johncpatterson/TIY-4-4-GitHub-Profile" target="_blank">
-          <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-          </p>
-        </a>
-      </section>
-    </section>
-    <!-- Github Project Tablet and larger-->
-    <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2>GitHub Profile Recreation <i class="fa fa-github-alt" aria-hidden="true"></i></h2>
-      <p><span class="iron-yard-week">The Iron Yard week 4, day 4 assignment.</span> The goal of this assignment was to re-create our user profile page on GitHub using HTML and CSS. The content of the page was retrieved using Ajax via the GitHub API.</p>
-      <br>
-      <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
-      <a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile/" target="_blank">
-        <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-        </p>
-      </a>
-      <a href="https://github.com/johncpatterson/TIY-4-4-GitHub-Profile" target="_blank">
-        <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-        </p>
-      </a>
-    </section>
-  </section>
-  <!-- T-Shirt Project -->
-  <section class="row no-margin">
-    <!-- T-shirt Project Tablet and larger-->
-    <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-T-Shirt Shopping Cart</h2>
-      <p><span class="iron-yard-week">The Iron Yard Cincinnati week 2, day 3 assignment.</span> The goal of this assignment was to build a store page for a t-shirt site with a working shopping cart. I also added some animations to the page as well as stored the cart contents using Javascript objects and arrays. This was the first Javascript assignment involving creating and modifying UI elements.</p>
-      <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
-      <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
-        <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-        </p>
-      </a>
-      <a href="https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost" target="_blank">
-        <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-        </p>
-      </a>
-    </section>
-    <section class="skills project-2 inline-block col s12 m6">
-      <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank"><img src="img/tshirt-profile-screenshot.png" alt="John Patterson headshot" class="responsive-img project-screenshot-opacity" id="project-screenshot-2"></a>
-      <!-- T-shirt Project Mobile-->
-      <section class="project-description-mobile center-block hide-on-med-and-up">
-        <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-T-shirt Shopping Cart</h2>
-        <p><span class="iron-yard-week">The Iron Yard Cincinnati week 2, day 3 assignment.</span> The goal of this assignment was to build a store page for a t-shirt site with a working shopping cart. I also added some animations to the page as well as stored the cart contents using Javascript objects and arrays. This was the first Javascript assignment involving creating and modifying UI elements.</p>
-        <br>
-        <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
-        <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
-          <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-          </p>
-        </a>
-        <a href="https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost" target="_blank">
-          <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-          </p>
-        </a>
-      </section>
-    </section>
-  </section>
-  <!-- Instagram Project -->
-  <section class="row no-margin">
-    <section class="skills project-3 inline-block col s12 m6">
-      <a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank"><img src="img/instagram-clone-screenshot.png" alt="John Patterson headshot" target="_blank" class=" project-screenshot-opacity" id="project-screenshot-3"></a>
-      <!-- Instagram Project Mobile -->
-      <section class="project-description-mobile center-block hide-on-med-and-up">
-        <h2>Instagram Clone <i class="fa fa-instagram" aria-hidden="true"></i>
-</h2>
-        <p><span class="iron-yard-week">The Iron Yard week 7, day 4 assignment.</span> The goal of this assignment was to build a simple Instagram-style app in Angular using concepts learned. This project uses ui-router and an API to add photos and retrieve them.</p>
-        <br>
-        <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, jQuery, Angular</p>
-        <!-- <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
+	<body ontouchstart="””">
+		<header>
+			<div class="header-container">
+				<a href="index.html">
+					<div class="logo-header inline z-depth-3">JCP</div>
+				</a>
+				<div class="nav-links inline">
+					<ul>
+						<li><a href="#whoami">Who I Am</a></li>
+						<li><a href="#whatido">What I do</a></li>
+						<li><a href="#wheretofindme">Where to Find Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section class="row intro-container-row">
+			<section class="intro-container">
+				<section class="headshot inline-block col s12 m4">
+					<img src="img/headshot-1.jpg" alt="John Patterson headshot" class="john-headshot-1 responsive-img z-depth-3" />
+				</section>
+				<section class="intro inline-block col s12 m8">
+					<p class="intro-text">Hey! I'm John and I like to build things on the web. Check out my work...</p>
+				</section>
+				<span id="whatido"></span>
+			</section>
+		</section>
+		<span id="whoami"></span>
+		<section class="row no-margin">
+			<section class="background background-story inline-block col s12 m6">
+				<h2><i class="fa fa-user" aria-hidden="true"></i> Who Am I ?</h2>
+				<p>
+					Hi, I'm John! I've always been an avid technology user and geek and programming has always intrigued me. I always
+					thought it was too hard and only for people who were good at math but that did not stop me from learning about it on my
+					own. Once I started I was hooked. As a result I decided to change careers and joined The Iron Yard, recently completing
+					the Front-End Web Development program. I am incredibly excited to work in this industry with so many intersting and
+					friendly people. When not doing programming I enjoy working out, listening to music, watching football and hanging with
+					my wife and new baby girl.
+				</p>
+			</section>
+			<section class="skills inline-block col s12 m6">
+				<h2>What I do <i class="fa fa-code" aria-hidden="true"></i></h2>
+				<ol>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Sass</li>
+					<li>Javascript</li>
+					<li>jQuery</li>
+					<li>Angular</li>
+					<li>Sketch</li>
+					<li>Bootstrap</li>
+					<li>Materialize</li>
+					<li>Git & GitHub</li>
+				</ol>
+				<h2 class="resume">
+					<a href="https://drive.google.com/file/d/0B6sVPYLk-iSwZngwZ0xqRVdNR3c/view?usp=sharing" target="_blank">My Resume</a>
+				</h2>
+				<h2 class="check-out-work-below">
+					<i class="fa fa-hand-o-down" aria-hidden="true"></i> Check out some of my work from my time @ The Iron Yard
+					Cincinnati...
+				</h2>
+			</section>
+		</section>
+		<!-- Github Project -->
+		<section class="row no-margin">
+			<section class="skills project-1 inline-block col s12 m6">
+				<a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile" target="_blank"
+					><img
+						src="img/github-profile-screenshot.png"
+						alt="John Patterson headshot"
+						class="responsive-img project-screenshot-opacity"
+						id="project-screenshot-1"
+				/></a>
+				<!-- Github Project Mobile-->
+				<section class="project-description-mobile center-block hide-on-med-and-up">
+					<h2>GitHub Profile Recreation <i class="fa fa-github-alt" aria-hidden="true"></i></h2>
+					<p>
+						<span class="iron-yard-week">The Iron Yard week 4, day 4 assignment.</span> The goal of this assignment was to
+						re-create our user profile page on GitHub using HTML and CSS. The content of the page was retrieved using Ajax via
+						the GitHub API.
+					</p>
+					<br />
+					<p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
+					<a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile/" target="_blank">
+						<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+					</a>
+					<a href="https://github.com/johncpatterson/TIY-4-4-GitHub-Profile" target="_blank">
+						<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+					</a>
+				</section>
+			</section>
+			<!-- Github Project Tablet and larger-->
+			<section class="background inline-block project hide-on-mobile col s12 m6">
+				<h2>GitHub Profile Recreation <i class="fa fa-github-alt" aria-hidden="true"></i></h2>
+				<p>
+					<span class="iron-yard-week">The Iron Yard week 4, day 4 assignment.</span> The goal of this assignment was to re-create
+					our user profile page on GitHub using HTML and CSS. The content of the page was retrieved using Ajax via the GitHub API.
+				</p>
+				<br />
+				<p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
+				<a href="https://johncpatterson.github.io/TIY-4-4-GitHub-Profile/" target="_blank">
+					<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+				</a>
+				<a href="https://github.com/johncpatterson/TIY-4-4-GitHub-Profile" target="_blank">
+					<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+				</a>
+			</section>
+		</section>
+		<!-- T-Shirt Project -->
+		<section class="row no-margin">
+			<!-- T-shirt Project Tablet and larger-->
+			<section class="background inline-block project hide-on-mobile col s12 m6">
+				<h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> T-Shirt Shopping Cart</h2>
+				<p>
+					<span class="iron-yard-week">The Iron Yard Cincinnati week 2, day 3 assignment.</span> The goal of this assignment was
+					to build a store page for a t-shirt site with a working shopping cart. I also added some animations to the page as well
+					as stored the cart contents using Javascript objects and arrays. This was the first Javascript assignment involving
+					creating and modifying UI elements.
+				</p>
+				<p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
+				<a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
+					<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+				</a>
+				<a href="https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost" target="_blank">
+					<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+				</a>
+			</section>
+			<section class="skills project-2 inline-block col s12 m6">
+				<a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank"
+					><img
+						src="img/tshirt-profile-screenshot.png"
+						alt="John Patterson headshot"
+						class="responsive-img project-screenshot-opacity"
+						id="project-screenshot-2"
+				/></a>
+				<!-- T-shirt Project Mobile-->
+				<section class="project-description-mobile center-block hide-on-med-and-up">
+					<h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> T-shirt Shopping Cart</h2>
+					<p>
+						<span class="iron-yard-week">The Iron Yard Cincinnati week 2, day 3 assignment.</span> The goal of this assignment
+						was to build a store page for a t-shirt site with a working shopping cart. I also added some animations to the page
+						as well as stored the cart contents using Javascript objects and arrays. This was the first Javascript assignment
+						involving creating and modifying UI elements.
+					</p>
+					<br />
+					<p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript</p>
+					<a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
+						<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+					</a>
+					<a href="https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost" target="_blank">
+						<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+					</a>
+				</section>
+			</section>
+		</section>
+		<!-- Instagram Project -->
+		<section class="row no-margin">
+			<section class="skills project-3 inline-block col s12 m6">
+				<a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank"
+					><img
+						src="img/instagram-clone-screenshot.png"
+						alt="John Patterson headshot"
+						target="_blank"
+						class="project-screenshot-opacity"
+						id="project-screenshot-3"
+				/></a>
+				<!-- Instagram Project Mobile -->
+				<section class="project-description-mobile center-block hide-on-med-and-up">
+					<h2>Instagram Clone <i class="fa fa-instagram" aria-hidden="true"></i></h2>
+					<p>
+						<span class="iron-yard-week">The Iron Yard week 7, day 4 assignment.</span> The goal of this assignment was to build
+						a simple Instagram-style app in Angular using concepts learned. This project uses ui-router and an API to add photos
+						and retrieve them.
+					</p>
+					<br />
+					<p class="project-skills">
+						<i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, jQuery, Angular
+					</p>
+					<!-- <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
         <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
         </p>
       </a> -->
-        <a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank">
-          <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-          </p>
-        </a>
-      </section>
-    </section>
-    <!-- Instagram Project tablet and larger -->
-    <section class="background inline-block project hide-on-mobile col s12 m6">
-      <h2>Instagram Clone <i class="fa fa-instagram" aria-hidden="true"></i>
-</h2>
-      <p><span class="iron-yard-week">The Iron Yard week 7, day 4 assignment.</span> The goal of this assignment was to build a simple Instagram-style app in Angular using concepts learned. This project uses ui-router and an API to add photos and retrieve them.</p>
-      <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, jQuery, Angular</p>
-      <!-- <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
+					<a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank">
+						<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+					</a>
+				</section>
+			</section>
+			<!-- Instagram Project tablet and larger -->
+			<section class="background inline-block project hide-on-mobile col s12 m6">
+				<h2>Instagram Clone <i class="fa fa-instagram" aria-hidden="true"></i></h2>
+				<p>
+					<span class="iron-yard-week">The Iron Yard week 7, day 4 assignment.</span> The goal of this assignment was to build a
+					simple Instagram-style app in Angular using concepts learned. This project uses ui-router and an API to add photos and
+					retrieve them.
+				</p>
+				<p class="project-skills">
+					<i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, jQuery, Angular
+				</p>
+				<!-- <a href="https://johncpatterson.github.io/TIY-2-3-T-Shirt-Cost/" target="_blank">
         <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
         </p>
       </a> -->
-      <a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank">
-        <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-        </p>
-      </a>
-    </section>
-  </section>
-  <!-- Final Group Project -->
-  <section class="row no-margin">
-    <!-- Final Group Project table and larger-->
-    <section class="background inline-block project project-4 hide-on-mobile col s12 m6">
-      <h2><i class="fa fa-glass" aria-hidden="true"></i>Final Group Project - FSQ Live 
-</h2>
-      <p>For our final group project we worked with 3CDC to build an app for thier Fountain Square Blast event on New Year's Eve. The app features a landing page with info about the event that allows users to sign up with Twitter and Facebook. Once signed up users were able to vote on polls that appeared on the big screen on Fountain Sqaure as well as in the app. The voting results were updated in real time.</p>
-      <br>
-      <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, Angular, Materialize</p>
-      <a href="http://fsqlive.com" target="_blank">
-        <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-        </p>
-      </a>
-      <a href="https://github.com/3cdctiy/3CDC-Final-Project" target="_blank">
-        <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-        </p>
-      </a>
-    </section>
-    <section class="skills project-4 inline-block col s12 m6">
-      <div class="carousel carousel-slider carousel-size center-block project-screenshot-opacity" id="project-screenshot-4">
-        <a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-1.png"></a>
-        <a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-5.png"></a>
-        <a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-3.png"></a>
-        <a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-4.png"></a>
-      </div>
-      <!-- Final Group Mobile -->
-      <section class="project-description-mobile center-block hide-on-med-and-up">
-        <h2>Final Group Project - FSQ Live <i class="fa fa-glass" aria-hidden="true"></i>
-</h2>
-        <p>For our final group project we worked with 3CDC to build an app for thier Fountain Square Blast event on New Year's Eve. The app features a landing page with info about the event that allows users to sign up with Twitter and Facebook. Once signed up users were able to vote on polls that appeared on the big screen on Fountain Sqaure as well as in the app. The voting results were updated in real time.</p>
-        <br>
-        <p class="project-skills"><i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascrip, Angular, Materialize</p>
-        <a href="http://fsqlive.com" target="_blank">
-          <p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i>
-          </p>
-        </a>
-        <a href="https://github.com/3cdctiy/3CDC-Final-Project" target="_blank">
-          <p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i>
-          </p>
-        </a>
-      </section>
-    </section>
-    <span id="wheretofindme"></span>
-  </section>
-  <section class="row no-margin">
-    <section class="contact inline-block col s12">
-      <h2>Where to find me</h2>
-      <ol>
-        <li><a href="https://www.linkedin.com/in/john-patterson-85b240131" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
-        <li><a href="https://github.com/johncpatterson" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        </li>
-        <li><a href="https://twitter.com/johncpatterson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li><a href="https://medium.com/@johncpatterson" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
-        </li>
-        <li><a href="mailto:john@johncpatterson.io?Subject=Hello!"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-      </ol>
-    </section>
-  </section>
-  <footer>
-    <a href="index.html">
-      <div class="logo-footer z-depth-3">JCP</div>
-    </a>
-    <p class="copyright"><a href="http://www.cincinnati-oh.gov/cityofcincinnati/"> Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> in Cincinnati. </a>&#169; <span id="date_year"></span> John C. Patterson</p>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <script src="./dist/js/main.js" async></script>
-</body>
-
+				<a href="https://github.com/johncpatterson/TIY-7-4-Instagram-Clone" target="_blank">
+					<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+				</a>
+			</section>
+		</section>
+		<!-- Final Group Project -->
+		<section class="row no-margin">
+			<!-- Final Group Project table and larger-->
+			<section class="background inline-block project project-4 hide-on-mobile col s12 m6">
+				<h2><i class="fa fa-glass" aria-hidden="true"></i>Final Group Project - FSQ Live</h2>
+				<p>
+					For our final group project we worked with 3CDC to build an app for thier Fountain Square Blast event on New Year's Eve.
+					The app features a landing page with info about the event that allows users to sign up with Twitter and Facebook. Once
+					signed up users were able to vote on polls that appeared on the big screen on Fountain Sqaure as well as in the app. The
+					voting results were updated in real time.
+				</p>
+				<br />
+				<p class="project-skills">
+					<i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascript, Angular, Materialize
+				</p>
+				<a href="http://fsqlive.com" target="_blank">
+					<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+				</a>
+				<a href="https://github.com/3cdctiy/3CDC-Final-Project" target="_blank">
+					<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+				</a>
+			</section>
+			<section class="skills project-4 inline-block col s12 m6">
+				<div class="carousel carousel-slider carousel-size center-block project-screenshot-opacity" id="project-screenshot-4">
+					<a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-1.png" /></a>
+					<a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-5.png" /></a>
+					<a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-3.png" /></a>
+					<a class="carousel-item" href="http://fsqlive.com" target="_blank"><img src="img/group-project-screenshot-4.png" /></a>
+				</div>
+				<!-- Final Group Mobile -->
+				<section class="project-description-mobile center-block hide-on-med-and-up">
+					<h2>Final Group Project - FSQ Live <i class="fa fa-glass" aria-hidden="true"></i></h2>
+					<p>
+						For our final group project we worked with 3CDC to build an app for thier Fountain Square Blast event on New Year's
+						Eve. The app features a landing page with info about the event that allows users to sign up with Twitter and
+						Facebook. Once signed up users were able to vote on polls that appeared on the big screen on Fountain Sqaure as well
+						as in the app. The voting results were updated in real time.
+					</p>
+					<br />
+					<p class="project-skills">
+						<i class="fa fa-file-text" aria-hidden="true"></i> Tech used: HTML, CSS, Sass, Javascrip, Angular, Materialize
+					</p>
+					<a href="http://fsqlive.com" target="_blank">
+						<p class="project-demo">Demo <i class="fa fa-external-link-square" aria-hidden="true"></i></p>
+					</a>
+					<a href="https://github.com/3cdctiy/3CDC-Final-Project" target="_blank">
+						<p class="project-github">GitHub <i class="fa fa-github" aria-hidden="true"></i></p>
+					</a>
+				</section>
+			</section>
+			<span id="wheretofindme"></span>
+		</section>
+		<section class="row no-margin">
+			<section class="contact inline-block col s12">
+				<h2>Where to find me</h2>
+				<ol>
+					<li>
+						<a href="https://www.linkedin.com/in/john-patterson-85b240131" target="_blank"
+							><i class="fa fa-linkedin" aria-hidden="true"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://github.com/johncpatterson" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/johncpatterson" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href="https://medium.com/@johncpatterson" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href="mailto:john@johncpatterson.io?Subject=Hello!"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+					</li>
+				</ol>
+			</section>
+		</section>
+		<footer>
+			<a href="index.html">
+				<div class="logo-footer z-depth-3">JCP</div>
+			</a>
+			<p class="copyright">
+				<a href="http://www.cincinnati-oh.gov/cityofcincinnati/">
+					Made with <i class="fa fa-heart pulse" aria-hidden="true"></i> in Cincinnati. </a
+				>&#169; <span id="date_year"></span> John C. Patterson
+			</p>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+		<script src="./dist/js/main.js" async></script>
+	</body>
 </html>
